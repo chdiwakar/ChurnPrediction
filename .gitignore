@@ -1,26 +1,81 @@
-# Environments
+# ==============================
+# Python Environments
+# ==============================
 venv/
 env/
+.venv/
+ENV/
+
+# ==============================
+# Python Cache Files
+# ==============================
 __pycache__/
+*.py[cod]
+*$py.class
+
+# ==============================
+# Jupyter Notebook
+# ==============================
 .ipynb_checkpoints/
 
-# Ignore ALL data files
-# data/raw/*.csv
+# ==============================
+# Data Files
+# ==============================
 data/processed/*.npy
 
-# Ignore model artifacts
+# ==============================
+# Model Artifacts
+# ==============================
 models/*.pkl
+models/*.joblib
+models/*.h5
+models/*.keras
+models/*.pt
+models/*.pth
 
-logs/
-outputs/
-
-.vscode/
-
-# Ignore MLflow tracking data and databases
+# ==============================
+# MLflow Tracking Data
+# ==============================
 mlruns/
-mlflow.db
+*.db
+*.db-shm
+*.db-wal
 
-# Ignore locally generated artifact plots and reports
+# ==============================
+# Logs
+# ==============================
+logs/
+*.log
+
+# ==============================
+# Generated Outputs
+# ==============================
+outputs/
 artifacts/
-.venv/
-*.pyc
+
+# ==============================
+# IDE Settings
+# ==============================
+.vscode/
+.idea/
+
+# ==============================
+# Operating System Files
+# ==============================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ==============================
+# Secrets and Environment Variables
+# ==============================
+.env
+.env.*
+!.env.example
+
+# ==============================
+# Temporary Files
+# ==============================
+*.tmp
+*.bak
+*.swp
